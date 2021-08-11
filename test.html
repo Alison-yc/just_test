@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function digitalRoot( digital ) {
+    // write code here
+    let num = 0
+        while(digital.toString().length > 1){
+            num = digital
+            digital = ~~(digital/10)
+            digital += num%10
+        }
+    console.log(digital)
+}
+digitalRoot(219)
+    </script>
+</body>
+</html>
